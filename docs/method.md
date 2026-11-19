@@ -82,4 +82,6 @@ No native rows, player profiles, indexes, feeds or derived plans are bundled or 
 
 ## Development tools
 
-Codex implements the source and browser workflow. The source, fictional controls and reproducible local checks are public.
+Codex implements the source and browser workflow. **JetBrains PyCharm 2026.3.0.1** (PY-263.7307.329) performs project code inspection of `reserve.py`, `grid_plan.py` and `check.py` using the project’s Python 3.12 interpreter and a saved correctness profile. We review its optional-value, dynamic-dictionary and naming findings alongside the independent matching controls and native preparation task. The IDE inspection completes and exports its diagnostic XML; source changes and runnable checks remain in the public repository.
+
+The development workflow keeps licensed records outside the source project, separates observation-derived pools from coach approval, and uses the same public engine for the synthetic workspace and private native validation.
