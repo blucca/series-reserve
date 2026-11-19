@@ -260,7 +260,7 @@ input[type="checkbox"] { width: 16px; height: 16px; margin: 0; accent-color: var
 .app-footer { border-top: 1px solid var(--line); margin: 0 36px; padding: 18px 0 22px; display: flex; justify-content: space-between; align-items: flex-start; gap: 25px; }
 .app-footer p { font-size: 11px; color: var(--muted); margin: 0; line-height: 1.55; max-width: 72ch; }
 .app-footer p:last-child { text-align: right; }
-.footer-links { display: flex; justify-content: flex-end; gap: 14px; margin-top: 5px; }
+.footer-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 14px; margin-top: 5px; }
 .app-footer a { color: var(--tide); text-underline-offset: 3px; }
 .app-footer button { display: inline; border: 0; background: transparent; color: var(--tide); padding: 0; min-height: 0; font-size: 11px; font-weight: 400; text-decoration: underline; text-underline-offset: 3px; }
 @media (min-width: 1440px) { .reserve-table .col-player { width: 19%; } .reserve-table .allocation-cell, .reserve-table .past-cell { font-size: 13px; } }

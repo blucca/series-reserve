@@ -2,6 +2,8 @@
 
 This fictional drill reuses Reserve’s complete ten-player practice plan. The series is tied 1–1 before Game 3, global Hard Fearless continues through Game 5, and Ember is assumed to pick first. Glow’s remaining support pool is **Rell, Alistar, Braum**. Tide can also select Rell.
 
+Use the [complete two-pick walkthrough](#check-the-complete-immediate-two-pick-turn) below in the free browser workspace. The coach walkthrough runs entirely in the browser.
+
 Both Ember first picks initially allocate **30/30**. Their worst Ember capacity over every available Tide first reply in the declared pools differs:
 
 | Ember first pick | Before reply: joint | After reply: worst Ember capacity |
@@ -21,7 +23,7 @@ Representative replies:
 
 Locking Rell also removes Rell from Tide’s available replies. The script enumerates every currently available Tide player/champion binding for these two Ember picks; each reply is an unweighted possibility.
 
-## Run the study
+## Optional reproducible study
 
 From a clone of [Reserve](https://github.com/blucca/series-reserve):
 
@@ -38,8 +40,8 @@ The script reads only the bundled fictional `demo.json` and existing `lib/engine
 3. Select **Tide takes Thresh**. Capacity stays **30/30**; Glow has Alistar and Braum for Games 4–5. Rell is already reserved, so **Tide takes Rell** is a conflicting comparison.
 4. Click **Undo** to restore the unlocked preparation.
 5. In **Game 3 actual draft**, set **Glow / Support** to **Alistar** and click **Save current draft**.
-6. Select **Tide takes Rell**. Inspect the Hall certificate: **Glow / Game 4 and Game 5**, **Braum**, **shortage 1**. The current Alistar slot is already filled; the shortage concerns Glow’s future turns. Switching to **Tide takes Thresh** restores **30/30**.
-7. Click **Undo** to restore the unlocked preparation. Save the JSON and coach notes if retaining the drill.
+6. Select **Tide takes Rell**. Inspect the Hall certificate: **Glow / Game 4 and Game 5**, **Braum**, **shortage 1**. The current Alistar slot is already filled; the shortage concerns Glow’s future turns. Switching to **Tide takes Thresh** restores **30/30**. **Save JSON** and **Export handoff** while retaining the preparation you want to discuss; both comparisons are included.
+7. After saving, click **Undo** to restore the unlocked preparation. Opening the saved JSON starts on **Base preparation**; select the saved comparison to inspect its reply.
 
 The output is champion capacity under explicit pools and fixed player bindings, through the opponent’s **first single-pick reply**. Coaches supply tactical priorities, plausible replies and revised playable pools. Attribute each shortage to its affected team: pressure on the opponent and damage to our reserve have different decision value.
 
@@ -56,13 +58,15 @@ The pair uses different players and champions, with no intervening action. Picks
 
 ### Three locks in the current workspace
 
-Start from the original fictional example with no current locks. Assume Ember first, followed by Tide’s two-pick turn.
+[Download the two ready-to-open fictional plans](https://blucca.github.io/series-reserve/demo.html#reply-drill). **Open JSON** shows their saved actual drafts on **Base preparation**: Alistar-first **29/30**, Rell-first **30/30**. Their pools, rules, evidence and explanatory notes travel with the file.
+
+To build either position yourself, start from the original fictional example with no current locks. Assume Ember first, followed by Tide’s two-pick turn.
 
 1. On **Reserve board**, expand **Game 3 actual draft**.
 2. Set **Ember / Glow / Support = Alistar**, **Tide / Reef / Top = Renekton**, and **Tide / Spray / Support = Rell**. Leave the other players **Not locked**, then **Save current draft** and select **Base preparation**.
-3. Inspect **29/30** and the Hall certificate: **Glow, Game 4 and Game 5; Braum; shortage 1**. All three current picks are filled; Glow’s future reserve is damaged.
+3. Inspect **29/30** and the Hall certificate: **Glow, Game 4 and Game 5; Braum; shortage 1**. All three current picks are filled; Glow’s future reserve is damaged. **Save JSON** and **Export handoff now, before Undo**, to keep these three locks and the future shortage for a teammate.
 4. Click **Undo** to restore the unlocked preparation.
-5. For the protected example, set **Glow = Rell**, **Reef = Renekton**, **Tide / Current / Jungle = Nocturne**, then **Save current draft** and select **Base preparation**. Capacity is **30/30**. **Undo** restores the preparation.
+5. For the protected example, set **Glow = Rell**, **Reef = Renekton**, **Tide / Current / Jungle = Nocturne**, then **Save current draft** and select **Base preparation**. Capacity is **30/30**. Save and export this protected position before **Undo**. Opening either saved JSON starts on **Base preparation**, so the recorded three locks and their capacity appear immediately; the other pick comparisons remain available.
 
 The first-reply result retains its original scope. This extension covers the complete immediate turn under the same pools and bindings. Coaches supply tactical priorities, flex assignments and any later-turn or future-ban scenario.
 

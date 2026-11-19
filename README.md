@@ -15,11 +15,11 @@ A pool can look deep enough for each player while both teams share too few champ
 3. Assign roles, edit the proposed pools and confirm them. Confirm the league rule and whether the final draft resets the champion reserve.
 4. Record completed games and their winners, then the current draft’s bans and locked picks.
 5. Compare a current pick. The board shows one allocation through the longest possible remaining series; a shortage shows the precise player/game slots sharing too few champion reserves.
-6. **Save JSON** keeps the entire plan and imported evidence. **Export handoff** downloads a readable preparation with the rule, pools, series state, comparisons, witnesses and coach notes. Open the saved JSON to resume. Undo restores recent edits.
+6. **Save JSON** keeps the entire plan and imported evidence. **Export handoff** downloads a readable preparation with the rule, pools, series state, comparisons, witnesses and coach notes. Open the saved JSON to resume on **Base preparation**, with the recorded current draft. Saved comparisons remain available separately. Undo restores recent edits.
 
 The example compares Tide’s support choices before Game 3: **Rell fills 29/30 remaining slots; Thresh fills 30/30**. All teams, players, matches and evidence in the public example are fictional.
 
-[Protect a reserve before the opponent replies](docs/first-reply.md): a worked drill where two first picks both fill 30/30, yet their next-reply reserve differs. Use the existing lock, compare and Undo controls; a runnable study checks every available first reply.
+[Protect a reserve before the opponent replies](docs/first-reply.md): a worked drill where two first picks both fill 30/30, yet the opponent’s next two picks leave different reserves. Use the existing lock, compare and Undo controls; an optional runnable study checks every available first reply and complete two-pick turn.
 
 Files and calculations stay in your browser. There is no account, upload endpoint, analytics or backend. Save your preparation before leaving the page.
 

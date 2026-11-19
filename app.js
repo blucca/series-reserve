@@ -541,7 +541,8 @@ byId('plan-file').addEventListener('change', async event => {
     validatePlan(imported);
     observations(imported);
     view.branchEditorId = null; view.branchEditorOpen = false; view.draftOpen = false;
-    commit(imported, file.name + ' loaded. Complete preparation and evidence restored in this browser.', { example: false, branchId: imported.branches[0]?.id ?? '', playerId: imported.players[0].id });
+    // Open the recorded draft, not an arbitrary first comparison that may now conflict.
+    commit(imported, file.name + ' loaded. Complete preparation and evidence restored in this browser. Base preparation shows the saved actual draft.', { example: false, branchId: '', playerId: imported.players[0].id });
     setTab('board');
   } catch (error) { showError(error); }
   finally { event.target.value = ''; }
