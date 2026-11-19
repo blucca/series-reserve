@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+# Third-party data is kept outside this repository.
+stl-hackathon-2026-grid-starter/
+*.zst
+*.jsonl
+*.parquet
+*.sqlite
+*.duckdb
