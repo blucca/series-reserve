@@ -70,7 +70,7 @@ A real Chromium walkthrough imports 153 fictional observations, proposes and con
 
 ### One separately licensed native series
 
-A registered-participant experiment uses one 2026 LCS playoff series from the pinned official GRID starter. Its feed has **80 unique draft events**, 40 picks and 40 standard bans across four completed games, with each game’s draft actions numbered 1–20.
+A registered-participant experiment uses the **Cloud9 vs LYON, 3 October 2026 LCS Split 3 Playoffs** series from the pinned official GRID starter. Its feed has **80 unique draft events**, 40 picks and 40 standard bans across four completed games, with each game’s draft actions numbered 1–20.
 
 The Game-3 first-pick preparation view uses **20 previous picks and six already observed current bans**. The four later current bans and all future-game bans stay outside that view. Historical pools use **1,074 nonempty pick observations** at actual game-start timestamps before the pre-series cutoff, with at least three observations per proposed champion. Two additional historical roster rows have empty champions and supply no pick evidence.
 
