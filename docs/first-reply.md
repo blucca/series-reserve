@@ -29,7 +29,7 @@ From a clone of [Reserve](https://github.com/blucca/series-reserve):
 node docs/first-reply.mjs
 ```
 
-The script reads only the bundled fictional `demo.json` and existing `lib/engine.js`. One grouped assertion checks the original control, both first picks, all available first replies and the future-slot certificate. Its output separates joint capacity and Ember’s team capacity.
+The script reads only the bundled fictional `demo.json` and existing `lib/engine.js`. One grouped assertion checks the original control, both first picks, all available first replies, complete two-pick turns and the future-slot certificate. Its output separates joint capacity and Ember’s team capacity.
 
 ## Coach walk-through in the existing workspace
 
@@ -43,8 +43,31 @@ The script reads only the bundled fictional `demo.json` and existing `lib/engine
 
 The output is champion capacity under explicit pools and fixed player bindings, through the opponent’s **first single-pick reply**. Coaches supply tactical priorities, plausible replies and revised playable pools. Attribute each shortage to its affected team: pressure on the opponent and damage to our reserve have different decision value.
 
+## Check the complete immediate two-pick turn
+
+Using the same fictional pools and fixed bindings, Tide’s complete consecutive two-pick turn preserves the first-reply distinction:
+
+| Ember first | Before reply: joint | Worst Ember after one reply | Worst Ember after two picks | Worst joint after two picks |
+| --- | ---: | ---: | ---: | ---: |
+| Rell | 30/30 | 15/15 | 15/15 | 30/30 |
+| Alistar | 30/30 | 14/15 | 14/15 | 29/30 |
+
+The pair uses different players and champions, with no intervening action. Picks already consumed, current bans and Ember’s first champion leave both reply pools. Counts are unweighted possible states.
+
+### Three locks in the current workspace
+
+Start from the original fictional example with no current locks. Assume Ember first, followed by Tide’s two-pick turn.
+
+1. On **Reserve board**, expand **Game 3 actual draft**.
+2. Set **Ember / Glow / Support = Alistar**, **Tide / Reef / Top = Renekton**, and **Tide / Spray / Support = Rell**. Leave the other players **Not locked**, then **Save current draft** and select **Base preparation**.
+3. Inspect **29/30** and the Hall certificate: **Glow, Game 4 and Game 5; Braum; shortage 1**. All three current picks are filled; Glow’s future reserve is damaged.
+4. Click **Undo** to restore the unlocked preparation.
+5. For the protected example, set **Glow = Rell**, **Reef = Renekton**, **Tide / Current / Jungle = Nocturne**, then **Save current draft** and select **Base preparation**. Capacity is **30/30**. **Undo** restores the preparation.
+
+The first-reply result retains its original scope. This extension covers the complete immediate turn under the same pools and bindings. Coaches supply tactical priorities, flex assignments and any later-turn or future-ban scenario.
+
 ## Why test a reply?
 
 In a [five-region coaching interview](https://dotesports.com/league-of-legends/news/coaches-from-five-regions-explain-how-fearless-draft-transformed-lol-esports), Goldenglue described teams prioritizing the opponent’s best picks; Rodrigo described preparation around combinations and answers. The article was published on 16 March 2026 from interviews at Worlds 2025. This drill tests one concrete reserve interaction.
 
-A complete allocation is a jointly available arrangement. The next reply can consume a champion used by that arrangement. Here, taking the shared champion first protects Ember’s declared reserve through the first reply. Later picks, second replies, bans, flex assignments and matchup quality form the coach’s next preparation state.
+A complete allocation is a jointly available arrangement. The next reply can consume a champion used by that arrangement. Here, taking the shared champion first protects Ember’s declared reserve through the first reply and the complete immediate two-pick turn. Later turns, future bans, flex assignments and matchup quality form the coach’s next preparation state.

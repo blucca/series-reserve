@@ -18,7 +18,7 @@ One separately licensed LCS-series experiment uses the same public adapter and b
 
 ## Ask who controls the next pick
 
-A joint allocation can hide a choice that the opponent would actively disrupt. The [first-reply study](first-reply.md) locks our pick before comparing their reply and reads which team owns the shortage. Both fictional first picks initially show 30/30; only one protects Ember’s reserve through all available first replies. Codex helped enumerate the bounded choices with the existing engine, preserving the coach’s control of pools, player binding and tactical quality.
+A joint allocation can hide a choice that the opponent would actively disrupt. The [first-reply study](first-reply.md) locks our pick before comparing their reply and reads which team owns the shortage. Both fictional first picks initially show 30/30; only one protects Ember’s reserve through all available first replies and the complete immediate two-pick turn. Codex helped enumerate the bounded choices with the existing engine, preserving the coach’s control of pools, player binding and tactical quality.
 
 ## Use the IDE in the actual development loop
 

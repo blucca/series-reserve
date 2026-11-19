@@ -54,7 +54,7 @@ The generic Python and JavaScript matching cores use exact string IDs. The brows
 
 A full allocation supplies one jointly available arrangement. A coach can first lock our candidate, then compare a specific opponent reply against the resulting state. Attribute each shortage to its affected team/player: pressure on the opponent and damage to our reserve have different decision value.
 
-The [complete fictional first-reply drill](first-reply.md) compares Ember support Rell and Alistar. Both start at 30/30. Rell first preserves 15/15 Ember capacity through every available Tide first reply; Alistar followed by Tide Rell leaves 14/15, with Games 4–5 sharing Braum. The [runnable study](first-reply.mjs) uses the same engine and unchanged demo pools. Its team bounds relax the other team’s free future demands. The modeled horizon is the first single-pick reply; the coach supplies tactical candidates and the next draft state.
+The [complete fictional first-reply drill](first-reply.md) compares Ember support Rell and Alistar. Both start at 30/30. Rell first preserves 15/15 Ember capacity through every available Tide first reply; Alistar followed by Tide Rell leaves 14/15, with Games 4–5 sharing Braum. The [runnable study](first-reply.mjs) uses the same engine and unchanged demo pools. Its team bounds relax the other team’s free future demands. The bounded study also checks the complete immediate consecutive two-pick turn under the same fixed bindings, preserving that distinction. The coach supplies tactical candidates and the next draft state.
 
 ## Validation
 
@@ -84,7 +84,7 @@ The Game-3 first-pick preparation view uses **20 previous picks and six already 
 
 The public adapter and browser engine produce **30/30** at baseline, **29/30** for a shared-champion opponent choice and **30/30** for a control choice. The shortfall certificate has three player/game slots and two remaining champion reserves. A currently banned champion returns to a future-game pool. Saving, reloading and exporting the native preparation also pass.
 
-A follow-up checks the actual first-pick team followed by the opponent’s first single reply under the same pool and binding assumptions. Initially full first choices differ in their reply-induced reserve vulnerability; complete native tables stay private.
+A follow-up checks the actual first-pick team followed by the opponent’s first single reply and complete consecutive two-pick turn under the same pool and binding assumptions. Initially full first choices differ in their reply-induced reserve vulnerability; complete native tables stay private.
 
 This result applies to the explicit observation-derived pool hypothesis, official league rule and known draft prefix. The native experiment’s pool approval is a research assumption. Professional use adds the coach’s own pools, role assignments and preparation decisions.
 
