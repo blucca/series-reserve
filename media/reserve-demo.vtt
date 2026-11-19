@@ -1,0 +1,80 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:04.789
+Reserve helps coaches prepare a whole global Hard Fearless series.
+
+00:00:04.809 --> 00:00:10.343
+This is a fictional practice plan: Ember and Tide are tied one to one before Game three.
+
+00:00:10.363 --> 00:00:16.362
+The board covers all ten players through Games 3, 4, and 5: 30 remaining slots.
+
+00:00:18.362 --> 00:00:20.716
+Compare Tide's support choices.
+
+00:00:20.736 --> 00:00:23.429
+Rell fills 29 of 30 slots.
+
+00:00:23.449 --> 00:00:27.261
+Three Ember support turns share just Alistar and Braum.
+
+00:00:27.281 --> 00:00:29.200
+Thresh fills all 30.
+
+00:00:29.220 --> 00:00:32.640
+Each board is one allocation witness for these pools.
+
+00:00:32.660 --> 00:00:35.570
+Gameplay and tactical choices stay with the coach.
+
+00:00:37.570 --> 00:00:40.014
+Use your own permitted CSV.
+
+00:00:40.034 --> 00:00:48.216
+Here I import the bundled fictional observations, set an explicit UTC cutoff, and inspect distinct earlier game counts.
+
+00:00:48.236 --> 00:00:51.725
+Propose from observations marks the pool for review.
+
+00:00:51.745 --> 00:00:55.330
+I check the assigned support role and confirm the playable pool.
+
+00:00:57.330 --> 00:01:00.828
+Earlier picks consume the shared reserve across games.
+
+00:01:00.848 --> 00:01:07.838
+Watch a current Rell ban: on Base preparation, Rell leaves Game three and remains available for a future game.
+
+00:01:07.858 --> 00:01:11.442
+I undo this temporary ban before choosing a support pick.
+
+00:01:13.442 --> 00:01:17.428
+Selecting a comparison leaves the actual draft unchanged.
+
+00:01:17.448 --> 00:01:20.955
+I compare Thresh, then lock it for Tide's support.
+
+00:01:20.975 --> 00:01:26.450
+That current pick consumes Thresh elsewhere while the plan still fills all thirty remaining slots.
+
+00:01:28.450 --> 00:01:32.211
+Save JSON preserves the complete preparation and evidence.
+
+00:01:32.231 --> 00:01:35.900
+Export handoff produces a readable plan for a colleague.
+
+00:01:35.920 --> 00:01:45.562
+Later, after New plan, I open that saved JSON: teams, roles, pools, history, locked pick, comparisons, and notes return together.
+
+00:01:47.562 --> 00:01:52.825
+Open Reserve for free at blucca.github.io/series-reserve/.
+
+00:01:52.845 --> 00:01:55.829
+Files and calculations stay in your browser.
+
+00:01:55.849 --> 00:01:57.584
+Save before leaving.
+
+00:01:57.604 --> 00:02:01.986
+The source is MIT licensed, and every bundled example is fictional.
+

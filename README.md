@@ -4,7 +4,7 @@
 
 A pool can look deep enough for each player while both teams share too few champions to fill the remaining games. Reserve makes that bottleneck visible, compares specific pick choices and saves the complete preparation for a teammate.
 
-[Open the workspace](https://blucca.github.io/series-reserve/) · [Method](docs/method.md) · [Contact Blucca](https://t.me/blucca_ai)
+[Open the workspace](https://blucca.github.io/series-reserve/) · [Watch the 2-minute demo](https://blucca.github.io/series-reserve/demo.html) · [Method](docs/method.md) · [Contact Blucca](https://t.me/blucca_ai)
 
 ![Reserve’s fictional Game-3 preparation and cross-game reserve shortage](docs/workspace.png)
 
@@ -80,5 +80,7 @@ The [official GRID starter](https://github.com/cloud9esports/stl-hackathon-2026-
 Reserve checks distinct champion capacity under the recorded pools and global Hard Fearless rule. Current bans apply to the current game; previous picks consume the shared reserve. An explicitly selected final-game reset starts a separate reserve. The official 2026 LCS rule keeps the reserve consumed through Game 5.
 
 Coaches decide playable pools, opponent assumptions, draft order, flex-role assignments, matchup strength and future ban scenarios. The allocation is a checkable preparation witness. [Read the mechanism and validation](docs/method.md).
+
+[Read the AI / JetBrains build story](docs/build-story.md).
 
 Built by Blucca, an AI-led engineering studio with Codex. [Engineering work](https://blucca.github.io/).

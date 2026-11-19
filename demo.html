@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#192c43">
+  <meta name="description" content="Watch a real Reserve preparation: review fictional evidence, compare support picks, lock Thresh, and save a complete coach handoff.">
+  <title>Reserve · Product demo</title>
+  <link rel="stylesheet" href="./styles.css">
+  <style>
+    .demo-header-links { display: flex; align-items: center; gap: 20px; }
+    .demo-header-links a { color: var(--tide); font-size: 13px; text-underline-offset: 3px; }
+    .demo-header-links .workspace-link { padding: 9px 13px; border-radius: 5px; color: var(--sheet); background: var(--ink); text-decoration: none; font-weight: 600; }
+    .demo-document { max-width: 1500px; padding-top: 28px; }
+    .demo-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; margin-bottom: 17px; }
+    .demo-heading h1 { margin-bottom: 0; font-size: 30px; }
+    .demo-heading p { margin-bottom: 0; color: var(--muted); font-size: 13px; }
+    .demo-video { display: block; width: 100%; aspect-ratio: 16 / 9; background: var(--ink); border: 1px solid var(--line); }
+    .demo-caption { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px 24px; padding: 14px 0 20px; border-bottom: 1px solid var(--line); }
+    .demo-caption p { margin: 0; font-size: 13px; color: var(--muted); }
+    .demo-caption a, .demo-text a { color: var(--tide); text-underline-offset: 3px; }
+    .demo-files { display: flex; gap: 18px; font-size: 13px; }
+    .demo-text { padding-top: 20px; font-size: 14px; }
+    .demo-text p { max-width: 76ch; margin-bottom: 14px; }
+    .demo-text nav { display: flex; flex-wrap: wrap; gap: 10px 24px; }
+    @media (max-width: 640px) {
+      .demo-header-links { margin-left: auto; gap: 14px; }
+      .demo-header-links a { font-size: 12px; }
+      .demo-heading { display: block; }
+      .demo-heading h1 { font-size: 27px; margin-bottom: 9px; }
+      .demo-document { padding-top: 23px; }
+      .demo-caption { padding-bottom: 17px; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#demo">Skip to the video</a>
+  <header class="app-header">
+    <div class="brand"><span class="reserve-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span class="wordmark">Reserve</span><span class="brand-purpose">Series preparation</span></div>
+    <nav class="demo-header-links" aria-label="Reserve links"><a href="https://github.com/blucca/series-reserve">Source</a><a class="workspace-link" href="./">Open workspace</a></nav>
+  </header>
+  <main id="demo" class="demo-document">
+    <div class="demo-heading"><h1>One complete coach preparation.</h1><p>Fictional Game 3, tied 1–1 · English demo</p></div>
+    <video class="demo-video" controls playsinline preload="metadata" poster="./media/reserve-demo-poster.jpg" aria-label="Reserve product demonstration with English narration and on-screen captions">
+      <source src="./media/reserve-demo.mp4" type="video/mp4">
+      <track kind="subtitles" src="./media/reserve-demo.vtt" srclang="en" label="English">
+      <p><a href="./media/reserve-demo.mp4">Download the Reserve demo</a>.</p>
+    </video>
+    <div class="demo-caption"><p>Real browser actions. Fictional teams and observations. Synthesized English narration and on-screen captions.</p><nav class="demo-files" aria-label="Demo files"><a href="./media/reserve-demo.mp4" download>Download video</a><a href="./media/reserve-demo.vtt" download>English subtitles</a></nav></div>
+    <div class="demo-text">
+      <p>Compare Rell’s 29/30 allocation with Thresh’s 30/30, review local CSV evidence and coach-assigned pools, lock the actual pick, then save and restore the complete plan. The board is a reserve-capacity witness; coaches evaluate playable pools, gameplay and tactical choices.</p>
+      <p>Reserve is free, with no account. Files and calculations stay in your browser. Save JSON before leaving to keep your preparation.</p>
+      <nav aria-label="Continue from the demo"><a href="./">Prepare your series</a><a href="./demo-evidence.csv" download>Fictional example CSV</a><a href="https://github.com/blucca/series-reserve/blob/main/docs/method.md">Read the method</a><a href="https://github.com/blucca/series-reserve">MIT-licensed source</a></nav>
+    </div>
+  </main>
+  <footer class="app-footer"><p>Built by Blucca with Codex.</p><p><a href="https://t.me/blucca_ai">Contact Blucca</a></p></footer>
+</body>
+</html>
