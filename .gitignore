@@ -7,3 +7,9 @@ stl-hackathon-2026-grid-starter/
 *.parquet
 *.sqlite
 *.duckdb
+
+# Local IDE state and separately licensed preparation files.
+.idea/
+*.iml
+*.native.json
+data/

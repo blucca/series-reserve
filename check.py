@@ -1,5 +1,9 @@
 """Small independent checks; all samples are fictional, with no licensed data."""
 from itertools import product
+import io
+import json
+from pathlib import Path
+from grid_plan import build_plan, extract_actions
 from reserve import allocate
 
 
@@ -45,4 +49,46 @@ except ValueError:
     pass
 else:
     raise AssertionError("A duplicated forced champion was accepted")
-print("PASS: exact allocation, shared-pool bottleneck, forced picks and per-game bans")
+
+# A fictional metadata/feed adapter task, using the same browser example.
+demo = json.loads((Path(__file__).parent / "demo.json").read_text())
+players = {p["id"]: p for p in demo["players"]}
+games = {}
+rosters = []
+for number in (1, 2, 3):
+    game_id = f"demo-game-{number}"
+    games[game_id] = {"series_id": "demo", "game_id": game_id, "game_number": str(number),
+                      "started_at": "2026-11-01T19:00:00Z", "finished": "True" if number < 3 else "False",
+                      "winner_team_id": "ember" if number == 1 else "tide", "patch": "fictional",
+                      "team1_id": "ember", "team1_name": "Ember", "team2_id": "tide", "team2_name": "Tide"}
+    if number < 3:
+        for pid, champion in demo["games"][number - 1]["picks"].items():
+            rosters.append({"game_id": game_id, "player_id": pid, "team_id": players[pid]["team"],
+                            "player_name": players[pid]["name"], "character_name": champion})
+for row in demo["evidence"]:
+    games[row["gameId"]] = {"series_id": "prior", "game_id": row["gameId"], "game_number": "1",
+                            "started_at": row["playedAt"], "patch": row["patch"]}
+    rosters.append({"game_id": row["gameId"], "player_id": row["player"], "team_id": row["team"],
+                    "player_name": players[row["player"]]["name"], "character_name": row["champion"]})
+event = {"id": "fake-ban-event", "type": "team-banned-character", "actor": {"id": "tide"}, "target": {"id": "fake-rell"},
+         "seriesStateDelta": {"games": [{"id": "demo-game-3", "draftActions": [{"sequenceNumber": 1, "type": "ban",
+         "drafter": {"id": "tide", "type": "team"}, "draftable": {"id": "fake-rell", "name": "Rell"}}]}]}}
+envelope = {"seriesId": "demo", "sequenceNumber": 8, "occurredAt": "2026-11-01T21:00:00Z", "events": [event]}
+actions = extract_actions(io.StringIO(json.dumps(envelope) + "\n"), "demo")
+adapted = build_plan(games, rosters, series_id="demo", as_of=demo["asOf"], actions=actions, draft_actions=1)
+assert len(adapted["evidence"]) == len(demo["evidence"])
+assert adapted["current"]["bans"] == ["Rell"]
+assert all(not p["confirmed"] for p in adapted["players"])
+assert not adapted["rules"]["confirmed"]
+assert {p["id"]: p["pool"] for p in adapted["players"]} == {p["id"]: sorted(p["pool"]) for p in demo["players"]}
+actions.append({"gameId": "demo-game-3", "sequence": 2, "action": "pick", "team": "tide", "champion": "Thresh"})
+try:
+    build_plan(games, rosters, series_id="demo", as_of=demo["asOf"], actions=actions, draft_actions=2)
+except ValueError as exc:
+    assert "coach-assigned" in str(exc)
+else:
+    raise AssertionError("Team-only current pick was assigned to a player automatically")
+bound = build_plan(games, rosters, series_id="demo", as_of=demo["asOf"], actions=actions,
+                   draft_actions=2, current_picks={"tide-support": "Thresh"})
+assert bound["current"]["picks"] == {"tide-support": "Thresh"}
+print("PASS: exact allocation, shared-pool bottleneck, forced picks, per-game bans and licensed-input adapter fictional task")

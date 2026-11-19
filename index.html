@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#192c43">
+  <meta name="description" content="A local coach workspace for global Hard Fearless series reserve planning. All included examples are fictional.">
+  <title>Reserve · Series preparation</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#workspace">Skip to the workspace</a>
+  <header class="app-header">
+    <div class="brand"><span class="reserve-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span class="wordmark">Reserve</span><span class="brand-purpose">Series preparation</span></div>
+    <nav class="file-actions" aria-label="Plan files">
+      <button type="button" data-action="new-plan" disabled>New plan</button>
+      <button type="button" data-action="import-plan">Open JSON</button>
+      <button type="button" data-action="undo" disabled><span aria-hidden="true">↶</span> Undo</button>
+      <button type="button" data-action="save-plan" disabled>Save JSON</button>
+      <button type="button" class="button-primary" data-action="handoff" disabled>Export handoff</button>
+    </nav>
+    <input id="plan-file" type="file" accept=".json,application/json" hidden>
+    <input id="evidence-file" type="file" accept=".csv,text/csv" hidden>
+  </header>
+  <div class="message-area" aria-live="polite" aria-atomic="true"><p id="status-message" class="status-message">Opening the fictional practice plan…</p></div>
+  <div id="error-message" class="error-message" role="alert" hidden></div>
+  <main id="workspace" tabindex="-1">
+    <section id="series-context" class="series-context" aria-label="Series context"></section>
+    <div class="workspace-nav" role="tablist" aria-label="Preparation workspace">
+      <button id="tab-board" type="button" role="tab" aria-selected="true" aria-controls="panel-board" tabindex="0" data-tab="board">Reserve board</button>
+      <button id="tab-evidence" type="button" role="tab" aria-selected="false" aria-controls="panel-evidence" tabindex="-1" data-tab="evidence">Evidence &amp; pools</button>
+      <button id="tab-series" type="button" role="tab" aria-selected="false" aria-controls="panel-series" tabindex="-1" data-tab="series">Series setup</button>
+    </div>
+    <section id="panel-board" class="workspace-panel" role="tabpanel" aria-labelledby="tab-board"><div class="loading-sheet"><h1>Prepare the whole reserve.</h1><p>The fictional example opens with Game 3 tied 1–1. Compare the two support picks, then edit the pools and rules for your own series.</p><p>Open a saved JSON plan to start from your own preparation.</p></div></section>
+    <section id="panel-evidence" class="workspace-panel" role="tabpanel" aria-labelledby="tab-evidence" hidden></section>
+    <section id="panel-series" class="workspace-panel" role="tabpanel" aria-labelledby="tab-series" hidden></section>
+  </main>
+  <footer class="app-footer"><p>Pool / rule allocation through the longest remaining series. Pick order, matchups and opponent comfort stay with the coach.</p><p>Local workspace. Save JSON to keep your work. <button type="button" data-action="load-demo">Reload fictional example</button><span class="footer-links"><a href="https://github.com/blucca/series-reserve" target="_blank" rel="noopener noreferrer">GitHub source</a><a href="https://t.me/blucca_ai" target="_blank" rel="noopener noreferrer">Contact Blucca</a></span></p></footer>
+  <noscript><p class="error-message">Enable JavaScript to edit the plan and calculate champion reserves. Your data is processed in this browser.</p></noscript>
+</body>
+</html>
