@@ -32,6 +32,8 @@ The board covers the longest possible remaining series, ending when a team has a
 3. A locked or compared pick fills its current slot **and** consumes its champion from other slots in that shared reserve.
 4. An explicit final-game reset creates a separate reserve for the final draft.
 
+Branches compare capacity at the saved prefix. Live next-action preparation uses the actual selecting team and all intervening picks and bans; current player bindings remain the coach’s explicit choice.
+
 For the 2026 LCS, [Riot’s Rulebook v2.2](https://cdn.sanity.io/files/dsfx7636/news_live/0064217ac83ff739c294fd98b1a20caf094a4688.pdf), §9.4, applies Fearless to both teams for the whole match, including Game 5. It describes 40 Fearless-exhausted champions plus 10 standard bans in Game 5. §9.4.1 makes standard bans available again in later games unless consumed by Fearless. The [official library](https://competitiveops.riotgames.com/library?GAME=lol&LEAGUE=LCS) lists that version.
 
 ## Exact allocation and explanation
@@ -47,6 +49,12 @@ When the remaining graph has unmatched slots, alternating reachability construct
 Every option shown in the certificate belongs to those slots after the known picks and bans. A successful allocation demonstrates enough distinct champion capacity in this model. Its ordering is deterministic for inspection, with tactical quality left to the coach.
 
 The generic Python and JavaScript matching cores use exact string IDs. The browser’s champion-name wrapper joins spacing, case and apostrophe variants while preserving source/display labels. Semantic aliases require explicit source mapping.
+
+## Prepare against a reply
+
+A full allocation supplies one jointly available arrangement. A coach can first lock our candidate, then compare a specific opponent reply against the resulting state. Attribute each shortage to its affected team/player: pressure on the opponent and damage to our reserve have different decision value.
+
+The [complete fictional first-reply drill](first-reply.md) compares Ember support Rell and Alistar. Both start at 30/30. Rell first preserves 15/15 Ember capacity through every available Tide first reply; Alistar followed by Tide Rell leaves 14/15, with Games 4–5 sharing Braum. The [runnable study](first-reply.mjs) uses the same engine and unchanged demo pools. Its team bounds relax the other team’s free future demands. The modeled horizon is the first single-pick reply; the coach supplies tactical candidates and the next draft state.
 
 ## Validation
 
@@ -75,6 +83,8 @@ A registered-participant experiment uses the **Cloud9 vs LYON, 3 October 2026 LC
 The Game-3 first-pick preparation view uses **20 previous picks and six already observed current bans**. The four later current bans and all future-game bans stay outside that view. Historical pools use **1,074 nonempty pick observations** at actual game-start timestamps before the pre-series cutoff, with at least three observations per proposed champion. Two additional historical roster rows have empty champions and supply no pick evidence.
 
 The public adapter and browser engine produce **30/30** at baseline, **29/30** for a shared-champion opponent choice and **30/30** for a control choice. The shortfall certificate has three player/game slots and two remaining champion reserves. A currently banned champion returns to a future-game pool. Saving, reloading and exporting the native preparation also pass.
+
+A follow-up checks the actual first-pick team followed by the opponent’s first single reply under the same pool and binding assumptions. Initially full first choices differ in their reply-induced reserve vulnerability; complete native tables stay private.
 
 This result applies to the explicit observation-derived pool hypothesis, official league rule and known draft prefix. The native experiment’s pool approval is a research assumption. Professional use adds the coach’s own pools, role assignments and preparation decisions.
 

@@ -19,6 +19,8 @@ A pool can look deep enough for each player while both teams share too few champ
 
 The example compares Tide’s support choices before Game 3: **Rell fills 29/30 remaining slots; Thresh fills 30/30**. All teams, players, matches and evidence in the public example are fictional.
 
+[Protect a reserve before the opponent replies](docs/first-reply.md): a worked drill where two first picks both fill 30/30, yet their next-reply reserve differs. Use the existing lock, compare and Undo controls; a runnable study checks every available first reply.
+
 Files and calculations stay in your browser. There is no account, upload endpoint, analytics or backend. Save your preparation before leaving the page.
 
 ## Evidence CSV
