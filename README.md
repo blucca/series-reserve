@@ -6,6 +6,8 @@ A pool can look deep enough for each player while both teams share too few champ
 
 [Open the workspace](https://blucca.github.io/series-reserve/) · [Watch the preparation + reply demo (2:36)](https://blucca.github.io/series-reserve/demo.html) · [Method](docs/method.md) · [Email Blucca](mailto:belgialucca@gmail.com) · [Telegram](https://t.me/blucca_ai)
 
+[38-second reserve drill](https://youtube.com/shorts/tAvfhJtbaDI) · [Recorded example and media](docs/short-drill.md)
+
 ![Reserve’s fictional Game-3 preparation and cross-game reserve shortage](docs/workspace.png)
 
 ## Prepare a series
