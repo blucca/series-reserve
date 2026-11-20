@@ -66,6 +66,14 @@ An own-side full allocation gives one assignment in that fixed model; an own-sid
 
 A private validation case can use the existing standalone core with those five pools. The browser plan schema and board continue to use both five-player lineups with confirmed pools. The published immediate-turn study uses the no-reset fixture’s segment zero; a final-reset case bridge uses the separate segment encoding instead. The [private-case request](../README.md#try-a-private-preparation-case) collects the actual rule, prefix and coach’s comparison before preparing a runnable case.
 
+### Check an existing future plan
+
+If your preparation already reserves a champion for a particular future player/game, the standalone core can fix that slot with `forced` and check the remaining allocation. Keep all approved pools and record the commitment before inspecting the output; the coach defines it as a required tactical condition or a preferred route with a fallback.
+
+Report total capacity and preservation of those commitments separately. A full reserve can remain playable while the original route needs changing: a promised champion may have been consumed, or fixing it may leave a conditional Hall shortage elsewhere. Both queries being full can confirm the stated resource commitments and replace the corresponding manual check. The allocation witness is ordered for inspection; tactical priorities come from the coach's plan.
+
+This is a standalone case check. The browser locks current picks; future commitments stay in the case notes and the separate core query. Resource IDs follow each commitment's game and the recorded reset rule, and updated picks or bans require an updated snapshot.
+
 ## Validation
 
 ### Independent small controls
