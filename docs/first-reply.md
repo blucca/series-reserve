@@ -31,7 +31,7 @@ From a clone of [Reserve](https://github.com/blucca/series-reserve):
 node docs/first-reply.mjs
 ```
 
-The script reads only the bundled fictional `demo.json` and existing `lib/engine.js`. One grouped assertion checks the original control, both first picks, all available first replies, complete two-pick turns and the future-slot certificate. Its output separates joint capacity and Ember’s team capacity.
+The script reads only the bundled fictional `demo.json` and existing `lib/engine.js`. Its checks cover the original control, both first picks, all available first replies, complete two-pick turns and the two fictional pool additions below. Its output separates joint capacity and Ember’s independent team bound.
 
 ## Coach walk-through in the existing workspace
 
@@ -75,3 +75,27 @@ The first-reply result retains its original scope. This extension covers the com
 In a [five-region coaching interview](https://dotesports.com/league-of-legends/news/coaches-from-five-regions-explain-how-fearless-draft-transformed-lol-esports), Goldenglue described teams prioritizing the opponent’s best picks; Rodrigo described preparation around combinations and answers. The article was published on 16 March 2026 from interviews at Worlds 2025. This drill tests one concrete reserve interaction.
 
 A complete allocation is a jointly available arrangement. The next reply can consume a champion used by that arrangement. Here, taking the shared champion first protects Ember’s declared reserve through the first reply and the complete immediate two-pick turn. Later turns, future bans, flex assignments and matchup quality form the coach’s next preparation state.
+
+## Which extra repairs this immediate turn?
+
+To keep **Glow’s Alistar first**, compare extras assumed approved for Glow. This fictional study assumes either **Thresh** or **Poppy** is stage-ready for Glow; the other demo pools and global Hard Fearless rule stay unchanged. Each condition has **16 Tide single bindings** and **102 legal complete immediate consecutive two-pick states**.
+
+| Extra in Glow’s pool | After Tide Rell: Ember / joint | Two-pick states with Ember shortage | Worst two-pick Ember / joint |
+| --- | --- | ---: | --- |
+| Original pool | 14/15 · 29/30 | 12/102 | 14/15 · 29/30 |
+| + Thresh | 15/15 · 30/30 | 0/102 | 15/15 · 30/30 |
+| + Poppy | 15/15 · 29/30 | 1/102 | 14/15 · 29/30 |
+
+**Thresh repairs all 102 states** within this turn. Tide’s fixed support binding makes Rell and Thresh alternative replies. **Poppy reduces damaging states from 12 to 1**: Tide support Rell plus Tide jungle Poppy consumes both shared options. Another 11 states retain Ember 15/15 while joint capacity remains 29/30. Counts are unweighted possible binding states.
+
+The workspace displays **joint capacity**. Ember’s bound comes from the study, relaxing Tide’s free future demands. With Poppy added, the single Rell reply leaves five slots—Glow G4–G5 and Tide jungle G3–G5—sharing four reserves: **Braum, Poppy, Nocturne, Maokai**. That mixed Hall certificate explains the joint shortage despite Ember’s 15/15 bound.
+
+![The real fictional workspace’s mixed Hall certificate: Glow’s two future slots and Tide jungle’s three slots share four reserves after Alistar then Rell, with Poppy added to Glow’s pool.](pool-repair.png)
+
+### Inspect either addition
+
+1. In **Evidence & pools**, add one candidate to Glow’s unchanged pool and confirm it for this fictional exercise.
+2. In **Game 3 actual draft**, set **Glow = Alistar**, **Spray = Rell**, **Current = Poppy**; leave others **Not locked**. **Save current draft → Base preparation**: Thresh gives 30/30; Poppy gives 29/30, with Glow G4–G5 sharing Braum.
+3. In the Poppy condition, set Current to **Not locked** and save again to inspect the single-reply five-slot/four-reserve certificate. **Save JSON** and **Export handoff**.
+
+Choose among approved extras using this immediate-turn capacity comparison. Update the preparation for the next game, later actions and future bans; these results cover fixed declared pools and this immediate consecutive two-pick turn.

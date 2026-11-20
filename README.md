@@ -21,6 +21,8 @@ The example compares Tide’s support choices before Game 3: **Rell fills 29/30 
 
 [Protect a reserve before the opponent replies](docs/first-reply.md): a worked drill where two first picks both fill 30/30, yet the opponent’s next two picks leave different reserves. Use the existing lock, compare and Undo controls; an optional runnable study checks every available first reply and complete two-pick turn.
 
+Keeping Alistar first? [Compare two stage-ready pool additions](docs/first-reply.md#which-extra-repairs-this-immediate-turn) in that same turn: Thresh restores every declared state; Poppy leaves one damaging reply pair. Both additions are assumptions for the fictional exercise.
+
 Files and calculations stay in your browser. There is no account, upload endpoint, analytics or backend. Save your preparation before leaving the page.
 
 ## Evidence CSV

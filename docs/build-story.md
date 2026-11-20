@@ -20,6 +20,8 @@ One separately licensed LCS-series experiment uses the same public adapter and b
 
 A joint allocation can hide a choice that the opponent would actively disrupt. The [first-reply study](first-reply.md) locks our pick before comparing their reply and reads which team owns the shortage. Both fictional first picks initially show 30/30; only one protects Ember’s reserve through all available first replies and the complete immediate two-pick turn. Codex helped enumerate the bounded choices with the existing engine, preserving the coach’s control of pools, player binding and tactical quality.
 
+Keeping Alistar first raised a follow-up question: which assumed-approved, stage-ready extra repairs this immediate turn? Codex reused the public engine across three fixed fictional pool conditions. Thresh preserves 30/30 across all 102 legal complete consecutive two-pick states; Poppy reduces Ember shortages from 12 to one, with a mixed joint certificate explaining the single Rell reply. The coach reproduces the added-pool states using the existing pool editor, confirmation and three current locks; later preparation stays explicit.
+
 ## Use the IDE in the actual development loop
 
 JetBrains **PyCharm 2026.3.0.1** inspected `reserve.py`, `grid_plan.py` and `check.py` with the project's Python 3.12 interpreter and a saved correctness profile. We reviewed its optional-value, dictionary-member and naming findings alongside the runnable controls. Optional values have explicit guards; the adapter's dynamic list fields are exercised by the complete preparation check. PyCharm completed the inspection and exported its diagnostic XML.
