@@ -4,7 +4,7 @@
 
 A pool can look deep enough for each player while both teams share too few champions to fill the remaining games. Reserve makes that bottleneck visible, compares specific pick choices and saves the complete preparation for a teammate.
 
-[Open the workspace](https://blucca.github.io/series-reserve/) · [Watch the 2-minute demo](https://blucca.github.io/series-reserve/demo.html) · [Method](docs/method.md) · [Email Blucca](mailto:belgialucca@gmail.com) · [Telegram](https://t.me/blucca_ai)
+[Open the workspace](https://blucca.github.io/series-reserve/) · [Watch the preparation + reply demo (2:36)](https://blucca.github.io/series-reserve/demo.html) · [Method](docs/method.md) · [Email Blucca](mailto:belgialucca@gmail.com) · [Telegram](https://t.me/blucca_ai)
 
 ![Reserve’s fictional Game-3 preparation and cross-game reserve shortage](docs/workspace.png)
 

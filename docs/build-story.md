@@ -28,7 +28,7 @@ JetBrains **PyCharm 2026.3.0.1** inspected `reserve.py`, `grid_plan.py` and `che
 
 ## Validate the handoff, not just the solver
 
-Codex also helped automate a real Chromium preparation: import CSV, review and confirm a pool, compare and lock a pick, record games, save JSON, export Markdown and reopen the complete plan. The saved JSON round-trip is equal. The public demo records real browser actions with fictional inputs and synthesized narration.
+Codex also helped automate a real Chromium preparation: import CSV, review and confirm a pool, compare and lock a pick, record games, save JSON, export Markdown and reopen the complete plan. The saved JSON round-trip is equal. The public demo records real browser actions with fictional inputs and synthesized narration. The current recording also replays Alistar against a complete Rell + Poppy turn: switching the hypothetical approved pool extra from Poppy to Thresh preserves the three actual locks and changes 29/30 to 30/30. That makes the pool decision and its future-slot certificate visible in the same workspace.
 
 A fresh internal first-use pass reached the complete reply drill through three links. It also surfaced a wrong import default: Open JSON selected the first hypothetical comparison, which conflicted with the protected position’s saved Rell. Codex localized the fix to the single import entry point. Reopening now shows the recorded draft on Base preparation: 30/30 for the protected three locks, 29/30 and Glow’s future shortage for the other. Both saved plans still round-trip equally. Direct drill links and [ready-to-open fictional preparations](https://blucca.github.io/series-reserve/demo.html#reply-drill) shorten the same handoff path.
 
