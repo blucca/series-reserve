@@ -27,6 +27,12 @@ Keeping Alistar first? [Compare two stage-ready pool additions](docs/first-reply
 
 Files and calculations stay in your browser. There is no account, upload endpoint, analytics or backend. Save your preparation before leaving the page.
 
+## Try a private preparation case
+
+For an **own-side reserve snapshot**, start with your five players’ approved pools, stable bindings, the league rule, completed games/score, current bans and picks, and two planned choices with an explicit one- or two-pick opponent reply. Known opponent picks consume the shared reserve; this scope relaxes their unforced future slots. A joint/shared-capacity check uses both lineups and their pools.
+
+[Email](mailto:belgialucca@gmail.com) or [Telegram](https://t.me/blucca_ai) to request a small private validation case to run locally. Consistent anonymized champion IDs are welcome. **The browser workspace uses ten-player joint plans; the own-side case uses the standalone matching core.**
+
 ## Evidence CSV
 
 Required columns: `game_id,played_at,team,player,champion`. Optional: `patch,source`.

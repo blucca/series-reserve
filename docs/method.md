@@ -58,6 +58,14 @@ The [complete fictional first-reply drill](first-reply.md) compares Ember suppor
 
 A pool-repair extension keeps Alistar first and compares three fixed declared pool conditions, assuming Glow’s Thresh or Poppy extra is stage-ready and coach-approved for the fictional exercise. All conditions have 102 legal complete immediate consecutive two-pick states. Thresh preserves joint 30/30 throughout; Poppy reduces Ember-shortage states from 12 to one, plus 11 states with Ember 15/15 and joint 29/30. Counts are unweighted possibilities. The existing pool editor, confirmation and current-draft locks expose the joint certificates; later games, actions and bans use the coach’s updated preparation.
 
+### Own-side snapshot with five pools
+
+The matching core can check just one team’s remaining player/game slots. Five coach-approved pools and the complete known draft state are enough for this scope: past shared picks and current opponent picks/replies consume reserves; our locked picks fill their own slots; current bans filter only current-game slots. Resource IDs follow the recorded rule, with a separate final-game segment when the reserve resets.
+
+An own-side full allocation gives one assignment in that fixed model; an own-side shortage gives its player/game Hall certificate. Later picks, bans or pool edits use an updated snapshot. Adding the opponent’s free future demands creates the joint/shared-capacity test and requires their pools too. The Poppy drill’s eleven states with own 15/15 and joint 29/30 illustrate the distinction.
+
+A private validation case can use the existing standalone core with those five pools. The browser plan schema and board continue to use both five-player lineups with confirmed pools. The published immediate-turn study uses the no-reset fixture’s segment zero; a final-reset case bridge uses the separate segment encoding instead. The [private-case request](../README.md#try-a-private-preparation-case) collects the actual rule, prefix and coach’s comparison before preparing a runnable case.
+
 ## Validation
 
 ### Independent small controls
